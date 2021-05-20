@@ -1,0 +1,110 @@
+@mixin cercle($width, $height, $bdcolor) {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: $width;
+  height: $height;
+  border: 1px solid $bdcolor;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+@mixin textStyle($fw, $fz, $lh) {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  color: #FFFFFF;
+}
+.services {
+  padding: 110px 0 105px;
+
+  &__title {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #323232;
+    max-width: 739px;
+    margin: 0 auto 50px;
+  }
+
+  &__subtitle {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #999999;
+    max-width: 730px;
+    margin: 0 auto 80px;
+  }
+
+  .row {
+    margin-bottom: 55px;
+    .column {
+      max-width: 33.3%;
+      padding: 0 15px;
+
+      .wrapper {
+        display: flex;
+
+        .imgBlock {
+          height: 40px;
+          width: 40px;
+          margin-right: 52px;
+          position: relative;
+          &__img{
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+          }
+          &::before {
+            @include cercle(90px, 90px, #4985FF)
+          }
+          &::after{
+            @include cercle(110px, 110px, #E0E0E0)
+          }
+        }
+        &__text{
+          max-width: 222px;
+          padding-top: 11px;
+        }
+        &__title{
+          font-family: Montserrat sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          color: #000000;
+          margin-bottom: 12px;
+        }
+        &__descr{
+          font-family: Montserrat, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 22px;
+          color: #999999;
+        }
+      }
+    }
+  }
+  &__btn{
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    background: #4985FF;
+    @include textStyle(500, 16px, 20px);
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+}

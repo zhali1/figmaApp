@@ -1,0 +1,35 @@
+@mixin textStyle($fw, $fz, $lh) {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  color: #FFFFFF;
+}
+
+.home {
+  background: url("../images/home/bg.png") top/cover;
+  padding: 220px 0 260px;
+    &__title {
+      @include textStyle(500, 16px, 20px);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &__subtitle {
+      @include textStyle(800, 48px, 64px);
+      max-width: 829px;
+      text-align: center;
+      margin: 0 auto 50px;
+    }
+    &__button {
+      width: 200px;
+      height: 45px;
+      border-radius: 30px;
+      background: #4985FF;
+      @include textStyle(500, 16px, 20px);
+      outline: none;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+}

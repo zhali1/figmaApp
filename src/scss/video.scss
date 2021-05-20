@@ -1,0 +1,60 @@
+.video{
+  background: url("../images/video/bg.png") 0 0/ 100% 570px no-repeat, white;
+  padding-top: 70px;
+  &__title{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  &__subtitle{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 70px;
+  }
+  &__block{
+    background: url("../images/video/Blockbg.png") center/cover no-repeat;
+    height: 430px;
+    max-width: 970px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 85px;
+    display: flex;
+  }
+  &__link{
+    display: flex;
+    border: 1px solid white;
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    align-items: center;
+    padding: 40px;
+  }
+  &__linkBtn{
+    margin-right: 10px;
+  }
+  &__playbtnText {
+    text-decoration: none;
+    margin-left: 21px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    width: 150px;
+  }
+  &__line{
+    border-top: 1px solid #E0E0E0;
+  }
+}

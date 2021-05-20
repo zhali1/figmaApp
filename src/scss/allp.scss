@@ -1,0 +1,49 @@
+.allp{
+  background: #F6F6F8;
+  padding: 100px 0 130px ;
+  &__title{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+  &__subtitle{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #999999;
+    max-width: 730px;
+    margin: 0 auto 70px;
+  }
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  &__button{
+    width: 200px;
+    height: 45px;
+    border: none;
+    background: #4985FF;
+    box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+    color: #FFFFFF;
+    margin: 0 auto;
+    outline: none;
+    cursor: pointer;
+  }
+}
